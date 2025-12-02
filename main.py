@@ -11,6 +11,9 @@ import datetime
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
+if not token:
+    print("ERROR: No token found in environment variables!")
+    exit(1)
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 
