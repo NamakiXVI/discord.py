@@ -27,7 +27,7 @@ jobs:
       # 4. Run your Python script
       - name: Execute script
         env:
-          DISCORD_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }} 
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }} 
         run: python main.py
 
 
